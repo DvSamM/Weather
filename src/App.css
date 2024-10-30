@@ -1,0 +1,170 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  /* background: linear-gradient(135deg, #a1c4fd, #c2e9fb); */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.app_heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3a3a3a;
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+}
+
+.container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  border-radius: 15px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-city {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.weather-description {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.weather-icon {
+  width: 60px;
+  height: auto;
+}
+
+.card-body {
+  margin-top: 10px;
+}
+
+.weather-temp {
+  font-size: 3rem;
+  color: #333;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.parameters {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.param-label {
+  font-weight: bold;
+}
+
+.param-val {
+  color: #007bff;
+}
+
+.current-date-time {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+/* Footer.css */
+.footer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%; /* Make the footer full width */
+  position: relative; /* Ensure proper positioning */
+  bottom: 0; /* Position at the bottom */
+}
+
+.footer p {
+  font-size: 1rem;
+  color: #333;
+  margin: 0;
+}
+
+.footer a {
+  color: #007bff; /* Color for the link */
+  text-decoration: none; /* Remove underline */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
